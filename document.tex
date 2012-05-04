@@ -219,6 +219,41 @@ większa. Prosta zasada to nowy termin, nowa wycena. Relokacja jest możliwa
 wtedy gdy mamy wolne pokoje w terminie, na który klient chce przesunąć
 rezerację.
 
+\subsubsection{Stan rezerwacji}
+Rezerwacja znajduje się w kilku możliwych stanach. Czytelników wrażliwych na
+anglicyzmy zapraszam do następnej sekcji. Osobiście nie podejmuje się tłumaczeń
+poszczególnych stanów, a jedynie wyjaśniam co znaczą. Zaletą jest to, że
+praktycznie wszędzie na świecie spotkamy te same angielskie nazwy. Pierwsze dwie
+stany są trochę bliskie wewnętrznej organizacji systemu, reszta jest już istotna
+z punktu widzenia człowieka.
+
+\begin{description}
+\item[Request denied] żądanie rezerwacji zostało odrzucone
+\item[Requested] żądanie rezerwacji zostało przyjęte, ale pobyt nie został
+jeszcze zarezerwowany
+\item[Reserved] pobyt został zarezerwowany
+\item[Cancelled] rezerwacja została odwołana przez klienta
+\item[In-house] klient zameldował się do hotelu. Od tego momentu zaczyna się
+pobyt
+\item[No-show] klient na którego była rezerwacja nie wmeldował się w dniu
+przyjazdu
+\item[Checked out] gość hotelowy wymeldował się z hotelu. Koniec pobytu.
+\item[Waitlisted] rezerwacja oczekuje na potwierdzenie
+\end{description}
+
+Można by jeszcze wskazać jeden stan, a mianowicie stan \emph{Check-in}.
+Rezerwacja znajduje się w tym stanie, gdy obecny dzień jest dniem przyjazdu
+klienta.
+
+\subsubsection{Typowy przebieg}
+Typowy przebieg wygląda następująco. Składamy rezerwację przez internet i ma
+wtedy ona stan \emph{Requested}, a wkrótce potem \emph{Reserved}. Następnie
+nadchodzi dzień przyjazdu i rezerwacja ma stan \emph{Check-in}. Gdy przyjeżdzamy
+do hotelu i zgłaszamy się w recepcji recepcjonista/tka przyjmuje nas, a
+rezerwacja zmienia swój stan na \emph{In-house}. Odbywamy pobyt i cieszymy się z
+wypoczynku, aż przychodzi dzień wyjazdu. Wymeldowujemy się z hotelu, a
+rezerwacja zmienia swój stan na \emph{Checked out}.
+
 \subsection{Rodzaje klientów}
 \label{rodzaje_klientow}
 Gości hotelowych można podzielić na parę kategorii. Przynależność do danej
@@ -414,5 +449,47 @@ elementów. Potencjalne składowe:
   \item cena podstawowa na dany dzień
   \item rodzaj klienta
 \end{itemize}
+
+\subsection{OpenTravel}
+OpenTravel to organizacja non-profit, założona w \mbox{1999 r.} przez firmy
+z branży turystycznej, której głównym zadaniem jest stworzenie struktur
+wiadomości elektronicznych w celu ułatwienia komunikacji pomiedzy różnymi systemami z
+branży turystycznej. OpenTravel jest złożone z firm reprezentujących linie
+lotniczne, wypożyczalnie samochodów, hotele, linie żeglugowe, firmy techniczne i
+dystrybutorów. Dziesiątki tysięcy struktur wiadomości jest używanych do
+przesyłania dziesiątek milionów wiadomości pomiędzy firmami partnerskimi każdego
+dnia.
+
+Do członków OpenTravel należą sieci hotelarskie, a niektóre z nich to:
+\begin{itemize}
+  \item Hilton Hotels Corporation
+  \item InterContinental Hotels Group
+  \item Marriott International
+\end{itemize}
+
+Wymieniam je ponieważ mają one swoje hotele w Polsce. 
+
+\subsubsection{Forma standardu}
+Wiadomości z OpenTravel można traktować jako standard, do którego trzeba się
+dostoswać jeśli mamy konkurować na rynku światowym z innymi hotelami. Jest to
+sposób na integracje całego spektrum biznesów branży turystycznej. Napisałem o
+tej ogranizacji dlatego, żeby wskazać jej istnienie i to, że należało by je brać
+pod uwagę jeśli chcielibyśmy napisać system dla ogólno światowej sieci hoteli
+lub innego biznesu z zakresu turystycznego bądź transportowego.
+
+Forma standardu to schematy XML'owe, które dokładnie określają każdy aspekt
+przesyłanych wiadomości. Zainteresowanych czytelników odsyłam do źródła TODO
+DODAĆ LINK DO ŹRÓDŁA / BIBLIOGRAFI
+przydatny link: http://adriatic.pilotfish-net.com/ota-modelviewer/
+
+\subsubsection{Dokumentacja standardu}
+OpenTravel dla zarejestrowanych użytkowników z statusem członka udostępnia
+przydatną dokumentację pokazującą jak wdrażać systemy oparte o ów wiadomości.
+Jest to również przydatna lektura na temat WebServices jako takich. Osobiście
+udało mi się otrzymać status członka i miałem okazję zapoznać się dostępną
+dokumentacją.
+
+Informacja dla zainteresowanych: o darmowy dostęp mogą ubiegać się pracownicy
+naukowi oraz studenci.
 
 \end{document}
