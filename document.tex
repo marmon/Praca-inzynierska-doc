@@ -121,7 +121,8 @@ rezerwacje można kartą kredytową, a płacić gotówką albo przelewem albo in
 Rezerwacja przechowuje dość sporo informacji. Standardowa porcja informacji, 
 które są wymagane aby dokonać rezerwacji jest następująca:
 \begin{itemize}
-  \item Data przyjazdu,
+  \item Numer rezerwacji,
+  \item data przyjazdu,
   \item data wyjazdu,
   \item rodzaj pokoju,
   \item dane rezerwującego
@@ -131,6 +132,7 @@ które są wymagane aby dokonać rezerwacji jest następująca:
     \item adres, 
     \item kontakt jak e-mail, numer telefonu.
   \end{itemize} 
+  \item kto płaci
 \end{itemize}
 
 Oprócz takich podstawowych informacji bardzo często możemy podać także wiele 
@@ -426,7 +428,8 @@ się jednak tutaj na cenach za pobyt i różnych jej wariantach.
 
 \subsubsection{Najwyższa stawka}
 W branży hotelarskiej występuje pojęcie \emph{Rack rate}, które określa pełną
-cenę za pokój, którą by musiał zapłacić jeśli przyszedł by do hotelu i chciał zamówić pokój.
+cenę za pokój, którą by musiał zapłacić klient jeśli przyszedł by do hotelu i
+chciał zamówić pokój.
 Pojęcie to nie jest tłumaczone na język polski i w hotelach występuje po prostu
 pod nazwą RACK. Można to nazwać ceną na wejściu. Jest to najwyższa stawka jaką
 trzeba zapłacić i taką płaci klient indywidualny jeśli nie dokona rezerwacji. Na
@@ -442,13 +445,19 @@ końcowej. Określone są także ceny za inne usługi.
 Jeśli dokonujemy rezerwacji to na cenę pobytu będzie składało się kilka
 elementów. Potencjalne składowe:
 \begin{itemize}
-  \item czy weekend czy dzień roboczy
-  \item kategoria pokoju
-  \item dodatkowe usługi wymienione na rezerwacji
-  \item rabaty
-  \item cena podstawowa na dany dzień
-  \item rodzaj klienta
+  \item czy weekend czy dzień roboczy,
+  \item kategoria pokoju,
+  \item dodatkowe usługi wymienione na rezerwacji,
+  \item rabaty,
+  \item cena podstawowa na dany dzień,
+  \item rodzaj klienta.
 \end{itemize}
+
+\subsubsection{Cena wolna}
+Cena jest wyliczana na podstawie składowych wymienionych powyżej, ale zawsze
+istnieje możliwość określenia dowolnej ceny wpisanej ręcznie przez pracownika
+do rezerwacji.
+Taka cena określana jest mianem ceny wolnej.
 
 \subsection{OpenTravel}
 OpenTravel to organizacja non-profit, założona w \mbox{1999 r.} przez firmy
